@@ -33,7 +33,7 @@ class Param:
         else:
             self.value = _answer_typed
 
-    def __str__(self):
+    def __repr__(self):
         return f'{self.label}: {self.value}'
 
 
@@ -42,10 +42,10 @@ class GameParams:
     MAX_PLAYERS = 4
     MIN_HUMAN_PLAYERS = 1
     MAX_HUMAN_PLAYERS = 2
-    BARREL_POOL_SIZE = 6  # 90
+    BARREL_POOL_SIZE = 10  # 90
     CARD_ROWS = 1  # 3
     CARD_COLUMNS = 10  # 9
-    CARD_ROW_NUMBERS = 5  # 5
+    CARD_ROW_NUMBERS = 3  # 5
     # ===========
     COL_WIDTH = len(str(BARREL_POOL_SIZE)) + 1
 
